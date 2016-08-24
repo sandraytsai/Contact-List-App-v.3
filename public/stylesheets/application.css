@@ -1,0 +1,17 @@
+body {
+  background-color: #cce6ff;
+}
+
+h1 {
+  color: #003566;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 70%;
+  height: 100%;
+}
+
+#showallcontacts {
+  margin: 0.5em 0em 0.5em 0em;
+}

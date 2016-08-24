@@ -1,1 +1,39 @@
-<h1>Home Page</h1>
+<h1 class="text-center">Contact List</h1>
+<div class="row newcontact text-center">
+  <h3 id="headerfunction">Create a New Contact</h3>
+  <form id="newcontactform">
+    First name:
+    <input type="text" name="firstname"><br>
+    Last name:
+    <input type="text" name="lastname"><br>
+    E-mail:
+    <input type="text" name="email"><br>
+    <input id="formbutton" type="submit" value="Add Contact" style="margin-top:0.5em">
+  </form>
+</div>
+<div class="row searchfunction text-center" style="margin-bottom: 1em">
+  <h3>Search for Contact</h3>
+  <input type="text" name="search" placeholder="search by name">
+  <input id="searchbutton" name="search" type="submit">
+</div>
+<div class="row">
+  <table class="contactlist table">
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>E-mail</th>
+      <th>Manage Contact</th>
+    </tr>
+    <%Contact.all.reverse.each do |contact|%>
+      <tr class="contact" id="contact-<%=contact.id%>">
+        <td><%=contact.first_name%></td> 
+        <td><%=contact.last_name%></td>
+        <td><%=contact.email%></td>
+        <td>
+          <button type="button" class="edit" style="margin-bottom: 0.5em">Edit</button>
+          <button type="button" class="delete" style="margin-bottom: 0.5em">Delete</button>
+        </td>
+      </tr>
+    <% end %> 
+  </table>
+</div>
