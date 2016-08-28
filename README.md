@@ -1,4 +1,4 @@
-Contact List App v.4
+Contact List App v.3
 =============
 
 A contact list app built using HTML, CSS, Javascript, and JQuery. First experience using AJAX. 
