@@ -1,7 +1,8 @@
-Sinatra
+Contact List App v.4
 =============
 
-Brought to you by Lighthouse Labs
+A contact list app built using HTML, CSS, Javascript, and JQuery. First experience using AJAX. 
+* Update function not fully implemented yet. 
 
 ## Getting Started
 
